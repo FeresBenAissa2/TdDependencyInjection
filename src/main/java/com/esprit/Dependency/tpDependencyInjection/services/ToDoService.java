@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
 @Component
-public class ToDoService {
+public class ToDoService implements IToDoService {
 	@Autowired
 	@Qualifier("ToDoUmlService")
 	private IToDoDao toDoDao;
